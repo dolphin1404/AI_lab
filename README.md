@@ -70,6 +70,24 @@
 1. **Environment Check**: Run `week2.ipynb` to verify PyTorch installation
 2. **Data Preprocessing**: Open `data_preprocessing.ipynb` to start data collection and preprocessing
 
+## 📖 문서 네비게이션 (Document Navigation)
+
+### 🎯 처음 시작하는 경우
+1. **`PROJECT_SUMMARY.md`** ⭐⭐⭐ - 전체 프로젝트 요약 및 시작 방법
+2. **`HOW_TO_PROCEED.md`** ⭐⭐⭐ - "어떻게 진행할까?" 질문에 대한 답변
+3. **`QUICK_START.md`** ⭐⭐ - 5분 만에 시작하기
+
+### 📅 일정 및 계획
+- **`WEEKLY_TIMELINE.md`** - Day-by-day 상세 일정
+- **`WORKFLOW.md`** - 프로세스 다이어그램 및 흐름도
+
+### 🔧 기술 문서
+- **`DATA_PREPROCESSING_GUIDE.md`** - 데이터 전처리 상세 가이드
+- **`data_preprocessing.ipynb`** - 실제 작업 노트북
+
+### 🛠️ 도구
+- **`track_progress.py`** - 진행 상황 추적 도구
+
 ## 다음 주까지 할 일 (Tasks by Next Week - Oct 27)
 
 ### 데이터 수집
