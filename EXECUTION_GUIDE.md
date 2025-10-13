@@ -495,6 +495,31 @@ matches = re.findall(r'\n\s*(CHAPTER|Chapter)\s+([IVXLCDM]+|\d+)', cleaned_text)
 print(f"Matches: {len(matches)}")
 ```
 
+#### 오류 5: 무한 루프 또는 실행 멈춤
+```
+# 챕터 분할
+chapters = preprocessor.split_into_chapters(cleaned_text)
+# ← 여기서 멈춤, 계속 실행됨
+```
+
+**원인**:
+- Regex catastrophic backtracking (정규표현식 폭발적 백트래킹)
+- 복잡한 정규표현식 패턴이 큰 텍스트에서 무한 루프처럼 작동
+
+**해결** (v3 업데이트 적용됨):
+- ✅ 안전한 줄 단위 목차 제거 알고리즘
+- ✅ 타임아웃 추가 (3초 제한)
+- ✅ Catastrophic backtracking 방지
+
+**수동 해결**:
+```python
+# Jupyter에서 셀 실행 중단
+# Kernel → Interrupt
+
+# 또는 노트북 재시작
+# Kernel → Restart
+```
+
 ### 5.2 성능 최적화
 
 #### 느린 실행 속도
